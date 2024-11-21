@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Fasilitas</title>
+</head>
+<body>
+    <h1>Daftar Fasilitas</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Kolam Renang</th>
+            <th>Lift</th>
+            <th>Kamera</th>
+            <th>Tahun</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
